@@ -9,9 +9,9 @@ import (
 
 // node info register into etcd
 type NodeInfo struct {
-	IP			string	`json: "ip"`
-	Service		string	`json: "service"`
-	Status		string	`json: "status"`
+	IP          string	`json:"ip"`
+	Service		string	`json:"service"`
+	Status		string	`json:"status"`
 }
 
 // Query ip info by interface name, e.g. eth0
@@ -45,6 +45,3 @@ func GetServFromConf(fn string) []string {
 	}
 	return cfg.Sections()[1:]
 }
-
-
-

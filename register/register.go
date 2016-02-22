@@ -90,7 +90,7 @@ func (w *Worker) HeartBeat() {
 			break
 		}
 		if strings.Contains(c.Status, "Exit") {
-			w.dockerClt.RestartContainer(c.ID, 1)
+			w.dockerClt.RestartContainer(c.ID, 2)
 		}
 	}
 }

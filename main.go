@@ -33,4 +33,8 @@ func main() {
 			w.HeartBeat()
 		}
 	}()
+    
+	for {
+	    time.Sleep(2)
+	}
 }
